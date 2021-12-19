@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    //상단바
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Menu"
+            android:layout_width="55dp"
+            android:layout_height="64dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/menu" />
+
+        <EditText
+            android:id="@+id/SearchText"
+            android:layout_width="294dp"
+            android:layout_height="60dp" />
+
+        <ImageButton
+            android:id="@+id/Search"
+            android:layout_width="63dp"
+            android:layout_height="64dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/scope" />
+    </LinearLayout>
+    //광고
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adSlider" />
+
+    </LinearLayout>
+    //아이콘
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Trend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trend"
+                android:textColor="#ffff0000"
+                app:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/Latest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Latest"
+                android:textColor="#ffff0000"
+                app:backgroundTint="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
